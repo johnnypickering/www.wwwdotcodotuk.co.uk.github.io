@@ -1,9 +1,14 @@
 <!doctype html>
 <html>
+  <script type='text/javascript' src='//www.midijs.net/lib/midi.js'></script>
   <head>
     <title>This is the title of the webpage!</title>
   </head>
   <body>
     <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
   </body>
+  
+  <EMBED SRC="midi\Onestop.mid" hidden=true autostart=true loop=1>
+     <a href="#" onClick="MIDIjs.play('midi/hinematov.mid');">Play hinematov.mid</a>
+    <a href="#" onClick="MIDIjs.stop();">Stop MIDI Playback</a>
 </html>
