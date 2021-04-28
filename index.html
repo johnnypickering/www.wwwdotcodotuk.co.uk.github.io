@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-  <script type='text/javascript' src='//www.midijs.net/lib/midi.js'></script>
+  <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
   <head>
     <title>This is the title of the webpage!</title>
   </head>
@@ -8,7 +8,9 @@
     <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
   </body>
   
-  <EMBED SRC="midi\Onestop.mid" hidden=true autostart=true loop=1>
-     <a href="#" onClick="MIDIjs.play('midi/hinematov.mid');">Play hinematov.mid</a>
-    <a href="#" onClick="MIDIjs.stop();">Stop MIDI Playback</a>
+  <midi-player
+  src="https://magenta.github.io/magenta-js/music/demos/melody.mid"
+  sound-font visualizer="#myVisualizer">
+  </midi-player>
+  <midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
 </html>
